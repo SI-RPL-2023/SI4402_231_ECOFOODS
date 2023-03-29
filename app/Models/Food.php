@@ -11,3 +11,4 @@ class Food extends Model
     protected $table = 'foowdfood';
     protected $guarded = [];
 }
+

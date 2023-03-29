@@ -45,3 +45,4 @@ Route::delete('/Admin/tableadmin/{id}', [AdminController::class, 'deletemakanan'
 
 
 
+
