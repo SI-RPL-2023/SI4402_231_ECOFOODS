@@ -44,3 +44,4 @@ Route::put('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasipesanan
 Route::delete('/Admin/tableadmin/{id}', [AdminController::class, 'deletemakanan'])->name('deletemakanan');
 
 
+
