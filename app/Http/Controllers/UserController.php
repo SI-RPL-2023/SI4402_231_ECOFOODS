@@ -133,7 +133,11 @@ class UserController extends Controller
         if($inputmakanan){
             return redirect('/succes');
         }
+
+        
     }
     
+
+
 
 }
