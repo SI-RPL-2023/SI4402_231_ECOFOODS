@@ -12,7 +12,7 @@
     <link rel="icon" href="image/logo.png" type="image/icon type">
     <link href="/asset/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Foowd</title>
+    <title>EcoFoods</title>
 </head>
 <body>
 @auth
@@ -22,7 +22,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <a href="/"><img src="../Image/foowd.png" width = "80px" height=""  alt=""></a>
+              <a href="/"><img src="../Image/EcoFoods.png" width = "80px" height=""  alt=""></a>
               
         
               <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">

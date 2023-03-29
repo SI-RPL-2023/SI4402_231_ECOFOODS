@@ -1,24 +1,24 @@
-<?php
-
-namespace App\Http\Controllers;
-
-use App\Models\User;
+<?php 
+ 
+namespace App\Http\Controllers; 
+ 
+use App\Models\User; 
 use App\Models\Transactions;
 use App\Models\Food;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request; 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
-
+ 
 class UserController extends Controller
-{
+{ 
     public function register()
     {
         return view('register');
     }
     public function succes()
     {
-        return view('User.succes');
+        return view('User.succes'); 
     }
     public function login()
     {
@@ -69,7 +69,7 @@ class UserController extends Controller
             if($RegisterUser){
                 return redirect('/login');
             }
-        
+         
     }
     public function ceklogin(Request $request)
     {
@@ -85,8 +85,8 @@ class UserController extends Controller
         }
  
         
-        return redirect('/login');
-
+        return redirect('/login'); 
+ 
     }
     public function logout(Request $request)
     {
@@ -95,9 +95,9 @@ class UserController extends Controller
         $request->session()->regenerateToken();
         return redirect('/');
     }
-    public function profile()
+    public function profile() 
     {
-        return view('user.profile');
+        return view('user.profile');  
     }
 
     public function updateprof(Request $request)
@@ -115,7 +115,7 @@ class UserController extends Controller
             'alamat'=> $request->alamat
         ]);
 
-        return back();
+        return back(); 
     }
 
     public function inputmakanan(Request $request){
@@ -129,15 +129,15 @@ class UserController extends Controller
             'harga' => $request->harga,
             'status' => "Menunggu Konfirmasi"
 
-        ]);
+        ]); 
         if($inputmakanan){
             return redirect('/succes');
         }
-
+ 
         
     }
     
-
+ 
 
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserController; 
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,7 +22,7 @@ Route::get('/login', [UserController::class, 'login'])->name('login');
 Route::post('/cekregis', [UserController::class, 'cekregis'])->name('cekregis');
 Route::post('/ceklogin', [UserController::class, 'ceklogin'])->name('ceklogin');
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
-Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+Route::get('/profile', [UserController::class, 'profile'])->name('profile'); 
 Route::post('/updateprof', [UserController::class, 'updateprof'])->name('updateprof');
 Route::get('/adminlogin', [UserController::class, 'adminlogin'])->name('adminlogin');
 Route::get('/home', [UserController::class, 'home'])->name('home');

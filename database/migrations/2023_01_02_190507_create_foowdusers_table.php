@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('foowdusers', function (Blueprint $table) {
+        Schema::create('foowdusers', function (Blueprint $table) { 
             $table->bigIncrements('id');
             $table->string('email', 255);
             $table->string('nama', 255);

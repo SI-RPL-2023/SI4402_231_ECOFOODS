@@ -150,8 +150,8 @@
               <div>
                 <h4>Customer Service</h4>
                 <p>
-                  <strong>Phone:</strong> +62 87832179458<br />
-                  <strong>Email:</strong> Eco Foods@gmail.com<br />
+                  <strong>Phone:</strong> +62 82178266377<br />
+                  <strong>Email:</strong> EcoFoods@gmail.com<br />
                 </p>
               </div>
             </div>
@@ -438,7 +438,7 @@
                 <h4>Customer Service</h4>
                 <p>
                   <strong>Phone:</strong> +62 82178266377<br />
-                  <strong>Email:</strong> Eco Foods@gmail.com<br />
+                  <strong>Email:</strong> EcoFoods@gmail.com<br />
                 </p>
               </div>
             </div>

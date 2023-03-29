@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('foowdusers', function (Blueprint $table) {
-            $table->unsignedBigInteger('id_role')->after('nama');
+        Schema::table('foowdusers', function (Blueprint $table) { 
+            $table->unsignedBigInteger('id_role')->after('nama'); 
             $table->foreign('id_role')->references('id')->on('roles')->onDelete('restrict');
         });
     }
