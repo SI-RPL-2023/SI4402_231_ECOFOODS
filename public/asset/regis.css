@@ -1,0 +1,68 @@
+html,
+
+body {
+  height: 100%;
+}
+
+:root {
+  --color-default: #212529;
+  --color-primary: #4fb848;
+  --color-secondary: #37373f;
+}
+:root {
+  scroll-behavior: smooth;
+}
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color:  #a6cba4;
+}
+span{
+  background-color: #ffffff;
+}
+
+.form-signin {
+  max-width: 660px;
+  padding: 15px;
+}
+
+.btn-book-a-table,
+.btn-book-a-table:focus {
+ font-size: 17px;
+ color: #fff;
+ background: var(--color-primary);
+ border-radius: 50px;
+ transition: 0.3s;
+}
+
+.btn-book-a-table:hover,
+.btn-book-a-table:focus:hover {
+ color: #fff;
+ background: rgba(32, 197, 76, 0.8);
+}
+
+.btn-book-a-tables
+.btn-book-a-tables:focus:hover {
+ color: #fff;
+ background: rgba(32, 197, 76, 0.8);
+}
+
+.btn-book-a-tables,
+.btn-book-a-tables:focus {
+ font-size: 17px;
+ color: #fff;
+ background: var(--color-secondary);
+ border-radius: 50px;
+ transition: 0.3s;
+}
+
