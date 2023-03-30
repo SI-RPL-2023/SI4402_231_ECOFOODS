@@ -19,7 +19,7 @@
         <form class="row g-3 form-input " enctype="multipart/form-data" action="/updateprof" method="POST">
           @csrf
           <div class="col-md-12">
-            <label for="nama" class="form-label">Nama Lengkap</label>
+            <label for="nama" class="form-label">Full Name</label>
             <input
               type="text"
               class="form-control"
@@ -38,7 +38,7 @@
             />
           </div>
           <div class="col-md-6">
-            <label for="number" class="form-label">Number</label>
+            <label for="number" class="form-label">Phone Number</label>
             <input
               type="number"
               class="form-control"
@@ -63,7 +63,7 @@
             />
           </div>
           <div class="col-12">
-            <label for="alamat" class="form-label">Alamat</label>
+            <label for="alamat" class="form-label">Address</label>
             <input
               type="text"
               class="form-control"
