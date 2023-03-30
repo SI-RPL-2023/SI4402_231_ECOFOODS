@@ -337,7 +337,7 @@
                       membantu menanggulangi masalah food waste ini. Dengan cara
                       yang mudah tentunya, yaitu dengan cara memesan makanan di
                       Eco Foods kita bersama dapat membantu mengurangi jumlah food
-                      waste yang terjadi di sekeliling kita.
+                      waste yang terjadi di sekeliling kita semua.
                     </p>
                   </div>
                 </div>
