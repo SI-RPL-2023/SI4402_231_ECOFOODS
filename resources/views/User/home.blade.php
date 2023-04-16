@@ -32,7 +32,7 @@
           </div>
           <div class="col-md-5">
               <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#ffff"/>
-                <image href="../Image/EcoFoods.png" alt="" width="100%" height="100%">
+                <image href="../Image/ecofoods.png" alt="" width="100%" height="100%">
               </svg>
 
           </div>
@@ -122,7 +122,7 @@
           </div>
           <div class="col-md-5 order-md-1">
               <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#ffff"/>
-                <image href="../Image/EcoFoods.png" alt="" width="100%" height="100%">
+                <image href="../Image/ecofoods.png" alt="" width="100%" height="100%">
               </svg>
 
           </div>
@@ -195,7 +195,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="/"><img src="../Image/EcoFoods.png" width = "80px" height=""  alt=""></a>
+                <a href="/"><img src="../Image/ecofoods.png" width = "80px" height=""  alt=""></a>
                 
           
                 <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
@@ -291,7 +291,7 @@
           </div>
           <div class="col-md-5">
               <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#ffff"/>
-                <image href="../Image/EcoFoods.png" alt="" width="100%" height="100%">
+                <image href="../Image/ecofoods.png" alt="" width="100%" height="100%">
               </svg>
 
           </div>
