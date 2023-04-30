@@ -79,7 +79,7 @@
 
         <div class="container">
           <div class="copyright">
-            &copy; Copyright <strong><span>foowd</span></strong
+            &copy; Copyright <strong><span>Eco Foods</span></strong
             >. All Rights Reserved
           </div>
         </div>
