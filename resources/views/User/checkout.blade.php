@@ -8,7 +8,7 @@
       <section>
   </span>
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../Image/foowd.png" alt="" width="100" height="">
+      <img class="d-block mx-auto mb-4" src="../Image/ecofoods.png" alt="" width="100" height="">
       <div class="section-header">
             <h2>Your Order</h2>
             <p>Check Out <span>Item</span></p>
@@ -75,7 +75,22 @@
 
           <hr class="my-4">
 
-          
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="pembayaran"value="credit" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="pembayaran" type="radio" value = "debit" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="pembayaran" type="radio" value="paypal" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
 
           <hr class="my-4">
 

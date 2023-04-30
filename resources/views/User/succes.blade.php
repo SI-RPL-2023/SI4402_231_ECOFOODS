@@ -6,12 +6,12 @@
           <hr class="featurette-divider">
 
           <div class="section-header">
-            <h2>Succes</h2>
-            <p>Transaction <span>Succes</span></p>
+            <h2>Success</h2>
+            <p>Transaction <span>Success</span></p>
           </div>
           <div class="succes " >
             <img src="../Image/Order food-bro.png" alt="" width = "200px">
-            <p class ="lead">Yay,Your Order is Succes</p>
+            <p class ="lead">Yay,Your Order is Success</p>
             <p class ="lead">Sit tight While Admin Confirmed Your Order</p>
             <a href="/home">
                 <button class="w-50 btn btn-book-a-table" type="submit">Back to Home</button>
