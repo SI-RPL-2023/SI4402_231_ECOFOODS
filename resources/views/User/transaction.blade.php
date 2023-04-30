@@ -54,7 +54,7 @@
                 <h4>Customer Service</h4>
                 <p>
                   <strong>Phone:</strong> +62 87832179458<br />
-                  <strong>Email:</strong> foowd@gmail.com<br />
+                  <strong>Email:</strong> ecofoods@gmail.com<br />
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@
 
         <div class="container">
           <div class="copyright">
-            &copy; Copyright <strong><span>foowd</span></strong
+            &copy; Copyright <strong><span>ecofoods</span></strong
             >. All Rights Reserved
           </div>
         </div>
