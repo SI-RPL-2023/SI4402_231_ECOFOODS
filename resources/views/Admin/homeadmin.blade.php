@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Foowd Admin</title>
+    <title>Eco Foods Admin</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ url ('asset/css/sb-admin-2.min.css')}}" rel="stylesheet" type="text/css">
@@ -19,7 +19,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link rel="icon" href="{{url('image/logo.png')}}" type="image/icon type">
+    <link rel="icon" href="{{url('image/ecofoods.png')}}" type="image/icon type">
     <style>
         .navcolor{
             background:#4fb848 !important;
@@ -39,7 +39,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/homeadmin">
                 <div class="sidebar-brand-icon">
-                <div class="sidebar-brand-text mx-3">Foowd Admin</div>
+                <div class="sidebar-brand-text mx-3">Eco Foods Admin</div>
                 </div>
             </a>
 
@@ -212,8 +212,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card shadow mb-4">
+                     </div>
+                    
+                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">
                                 Nama User
@@ -248,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-
+ 
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
@@ -268,23 +269,23 @@
                 </div>
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="/logout">Logout</a>
+                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                     <a class="btn btn-primary" href="/logout">Logout</a>
                 </div>
             </div>
         </div>
     </div>
+ 
+     <!-- Bootstrap core JavaScript-->
+     <script src="{{url('asset/vendor/jquery/jquery.min.js')}}"></script>
+     <script src="{{url('asset/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+     <script src="{{url('asset/vendor/bootstrap.js')}}"></script>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="{{url('asset/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{url('asset/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{url('asset/vendor/bootstrap.js')}}"></script>
+     <!-- Core plugin JavaScript-->
+     <script src="{{url('asset/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="{{url('asset/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="{{url('asset/js/sb-admin-2.min.js')}}"></script>
+     <!-- Custom scripts for all pages-->
+     <script src="{{url('asset/js/sb-admin-2.min.js')}}"></script>
 
 </body>
 

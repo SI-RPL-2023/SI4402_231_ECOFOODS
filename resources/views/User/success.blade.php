@@ -6,27 +6,16 @@
           <hr class="featurette-divider">
 
           <div class="section-header">
-            <h2>Our Menu</h2>
-            <p>Check Our <span>Menu</span></p>
+            <h2>Succes</h2>
+            <p>Transaction <span>Succes</span></p>
           </div>
-          <div class="row gy-5 " >
-          @foreach ($list as $l)
-                
-                    <div class="col-md-4 menu-item">
-                      <img
-                        src="{{ asset ('storage/images/' .$l -> foto) }}"
-                        class="menu-img img-fluid"
-                        alt=""
-                        width = "200px"
-                    />
-                    <h4>{{$l -> nama_makanan}}</h4>
-                    <p class="ingredients">{{$l -> deskripsi}}</p>
-                    <p class="price">Rp {{number_format($l -> harga)}}</p>
-                    <p><a class="btn btn-book-a-table" href="/detail/{{$l -> id}}">View details &raquo;</a>
-                    <a class="btn btn-book-a-table" href="/checkout/{{$l -> id}}">Check Out &raquo;</a></p>
-                  </div>  
-                        
-          @endforeach
+          <div class="succes " >
+            <img src="../Image/Order food-bro.png" alt="" width = "200px">
+            <p class ="lead">Yay,Your Order is Succes</p>
+            <p class ="lead">Sit tight While Admin Confirmed Your Order</p>
+            <a href="/home">
+                <button class="w-50 btn btn-book-a-table" type="submit">Back to Home</button>
+            </a>
           </div> 
           <hr class="featurette-divider">
       </div>
@@ -50,7 +39,7 @@
                 <h4>Customer Service</h4>
                 <p>
                   <strong>Phone:</strong> +62 82178266377<br />
-                  <strong>Email:</strong> EcoFoods@gmail.com<br />
+                  <strong>Email:</strong> ecofood@gmail.com<br />
                 </p>
               </div>
             </div>
@@ -79,7 +68,7 @@
 
         <div class="container">
           <div class="copyright">
-            &copy; Copyright <strong><span>Eco Foods</span></strong
+            &copy; Copyright <strong><span>ecofood</span></strong
             >. All Rights Reserved
           </div>
         </div>
