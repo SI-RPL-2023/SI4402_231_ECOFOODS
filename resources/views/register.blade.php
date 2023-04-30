@@ -9,7 +9,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/asset/regis.css">
-    <link rel="icon" href="/image/logo.png" type="image/icon type">
+    <link rel="icon" href="/image/ecofoods.png" type="image/icon type">
     <title>Foowd</title>
 </head>
 <body class="text-center">
@@ -22,7 +22,7 @@
             <form action="/cekregis" method="POST">
             @csrf
                 <a href="/">
-                    <img class="mb-4" src="../Image/logoecofoods.png" alt="" width="100" height="">
+                    <img class="mb-4" src="../Image/ecofoods.png" alt="" width="100" height="">
                 </a>
             
                 <div class="form-floating">
