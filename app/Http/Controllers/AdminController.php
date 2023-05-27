@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Food;
-use App\Models\Transactions;
+use App\Models\Transactions; 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -72,9 +72,9 @@ class AdminController extends Controller
             return redirect('/Admin/tableadmin'); 
         }
     }
-    public function konfirmasipesanan(Request $request, $id){
-        $konfirmasipesanan = Transactions::find($id);
-        $konfirmasipesanan->update($request->except('_token'));
+    public function konfirmasipesanan(Request $request, $id){ 
+        $konfirmasipesanan = Transactions::find($id); 
+        $konfirmasipesanan->update($request->except('_token')); 
         return redirect('/Admin/validateadmin'); 
     }
     public function deletemakanan($id){
