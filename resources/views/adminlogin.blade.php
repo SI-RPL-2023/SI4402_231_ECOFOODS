@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/asset/login.css">
     <link rel="icon" href="/image/ecofoods.png" type="image/icon type">
-    <title>Foowd</title>
+    <title>ecofoods</title>
 </head>
 <body>
     <section class="h-100 gradient-form" style="background: #a6cba4">
@@ -30,7 +30,7 @@
                 <p class="alert alert-danger">{{ $err }}</p>
                 @endforeach
                 @endif
-            <form action="/ceklogin" method="POST">
+            <form action="/cekloginadmin" method="POST">
             @csrf
                 <a href="/">
                     <img class="mb-4" src="../Image/ecofoods.png" alt="" width="100" height="">
@@ -48,14 +48,10 @@
                       <div class="text-center pb-1 mb-2">
                         <button class="w-50 btn btn-book-a-table"  type="submit">Log in</button>
                         <br><br>
-                        <a class="nav-link" href="/adminlogin">
-                            <button class="w-50 btn btn-book-a-tables"  type="button">Log in Admin</button>
+                        <a class="nav-link" href="/login">
+                            <button class="w-50 btn btn-book-a-tables"  type="button">Log in User</button>
                         </a>
                       </div>
-                        <p>
-                            Doesn't have any account? <a href="/register">Sign Up</a>
-                        </p>
-
                     
                     </form>
                   </div>
@@ -65,7 +61,7 @@
                 >
                   <div>
                     <img
-                      src="../Image/Login-bro.png "
+                      src="../Image/Computer login-bro.png "
                       style="width: 80%"
                       alt=""
                     />
@@ -78,5 +74,3 @@
       </div>
     </section>
   </body>
-
-  

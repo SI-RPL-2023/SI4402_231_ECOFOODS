@@ -214,8 +214,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card shadow mb-4">
+                     </div>
+                    
+                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">
                                 Nama User
@@ -250,7 +251,7 @@
                             </div>
                         </div>
                     </div>
-
+ 
 
                     <!-- Scroll to Top Button-->
                     <a class="scroll-to-top rounded" href="#page-top">

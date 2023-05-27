@@ -28,10 +28,10 @@ class UserController extends Controller
     {
         return view('adminlogin');
     }
-    public function transaction()
-    {
+    public function transaction() 
+    {  
         $list = Transactions::all();
-        return view('User.transaction', compact('list'));
+        return view('User.transaction', compact('list')); 
     }
     public function checkout($id)
     {
@@ -134,11 +134,11 @@ class UserController extends Controller
             return redirect('/succes');
         }
  
-        
     }
-    
+     
+  
  
-
-
+ 
 }
+
 
