@@ -32,6 +32,7 @@ Route::post('/checkout', [UserController::class, 'inputmakanan'])->name('inputma
 Route::get('/transaction', [UserController::class, 'transaction'])->name('transaction');    
 Route::get('/detail/{id}', [UserController::class, 'detail'])->name('detail');
 Route::get('/succes', [UserController::class, 'succes'])->name('succes'); 
+Route::get('/invoice/{id}', [UserController::class, 'invoice']);
 
 Route::post('/cekloginadmin', [AdminController::class, 'cekloginadmin'])->name('cekloginadmin');
 Route::get('/Admin/homeadmin', [AdminController::class, 'adminlogin'])->name('adminlogin');

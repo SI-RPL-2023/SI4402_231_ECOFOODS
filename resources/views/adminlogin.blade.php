@@ -19,7 +19,7 @@
           <div class="col-xl-10">
             <div
               class="card rounded-3 text-black"
-              style="background-color: #fff"
+              style="background-color: #fff "
             >
               <div class="row g-0">
                 <div class="col-lg-6">
