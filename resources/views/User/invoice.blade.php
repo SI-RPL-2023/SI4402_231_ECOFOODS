@@ -62,7 +62,7 @@
                   <div>
                       <h4>Address</h4>
                       <p>
-                          Bojongsoang <br />
+                          Bojongsoangg <br />
                           Bandung, BDG 14022 - IDN<br />
                       </p>
                   </div>
