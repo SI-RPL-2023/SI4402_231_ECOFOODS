@@ -6,11 +6,11 @@
           <hr class="featurette-divider">
 
           <div class="section-header">
-            <h2>Our Menu</h2>
+            <h2>Our Menu</h2> 
             <p>Check Our <span>Menu</span></p>
           </div>
-          <div class="row gy-5 " >
-          @foreach ($list as $l)
+          <div class="row gy-5 " > 
+          @foreach ($list as $l) 
                 
                     <div class="col-md-4 menu-item">
                       <img

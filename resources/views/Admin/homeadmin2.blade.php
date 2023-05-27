@@ -21,9 +21,9 @@
     <!-- Custom styles for this template-->
     <link rel="icon" href="{{url('image/ecofoods.png')}}" type="image/icon type">
     <style>
-        .navcolor{
-            background:#4fb848 !important;
-        }
+    .navcolor {
+        background: #4fb848 !important;
+    }
     </style>
 
 </head>
@@ -39,7 +39,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/homeadmin">
                 <div class="sidebar-brand-icon">
-                <div class="sidebar-brand-text mx-3">Eco Foods Admin</div>
+                    <div class="sidebar-brand-text mx-3">Eco Foods Admin</div>
                 </div>
             </a>
 
@@ -156,7 +156,8 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Pendapatan</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp {{number_format($transaksi)}}</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp
+                                                {{number_format($transaksi)}}</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -176,7 +177,8 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$tr}}</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$tr}}
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -243,7 +245,7 @@
                                             @csrf
                                         </tr>
                                         @endforeach
-                                        
+
                                     </tbody>
                                 </table>
                             </div>
@@ -251,42 +253,43 @@
                     </div>
  
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+                    <!-- Scroll to Top Button-->
+                    <a class="scroll-to-top rounded" href="#page-top">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                     <a class="btn btn-primary" href="/logout">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
- 
-     <!-- Bootstrap core JavaScript-->
-     <script src="{{url('asset/vendor/jquery/jquery.min.js')}}"></script>
-     <script src="{{url('asset/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-     <script src="{{url('asset/vendor/bootstrap.js')}}"></script>
+                    <!-- Logout Modal-->
+                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">Select "Logout" below if you are ready to end your current
+                                    session.</div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                    <a class="btn btn-primary" href="/logout">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-     <!-- Core plugin JavaScript-->
-     <script src="{{url('asset/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+                    <!-- Bootstrap core JavaScript-->
+                    <script src="{{url('asset/vendor/jquery/jquery.min.js')}}"></script>
+                    <script src="{{url('asset/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+                    <script src="{{url('asset/vendor/bootstrap.js')}}"></script>
 
-     <!-- Custom scripts for all pages-->
-     <script src="{{url('asset/js/sb-admin-2.min.js')}}"></script>
+                    <!-- Core plugin JavaScript-->
+                    <script src="{{url('asset/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+                    <!-- Custom scripts for all pages-->
+                    <script src="{{url('asset/js/sb-admin-2.min.js')}}"></script>
 
 </body>
 
-</html> 
+</html>
