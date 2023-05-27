@@ -39,8 +39,8 @@ Route::get('/Admin/tableadmin', [AdminController::class, 'tableadmin'])->name('t
 Route::get('/Admin/admininput', [AdminController::class, 'inputadmin'])->name('inputadmin');
 Route::post('/Admin/admininput', [AdminController::class, 'cekinput'])->name('cekinput');
 Route::get('/Admin/validateadmin', [AdminController::class, 'validateadmin'])->name('validate');
-Route::get('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasi'])->name('konfirmasi');
-Route::put('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasipesanan'])->name('konfirmasipesanan');
+Route::get('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasi'])->name('konfirmasi'); 
+Route::put('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasipesanan'])->name('konfirmasipesanan'); 
 Route::delete('/Admin/tableadmin/{id}', [AdminController::class, 'deletemakanan'])->name('deletemakanan');
 
 
