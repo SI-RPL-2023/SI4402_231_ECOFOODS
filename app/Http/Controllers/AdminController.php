@@ -34,7 +34,7 @@ class AdminController extends Controller
     public function konfirmasi($id)
     {
         $list = Transactions::find($id);
-        return view('Admin.konfirmasi' , compact(['list']));
+        return view('Admin.konfirmasi' , compact(['list'])); 
     }
     public function validateadmin()
     {
@@ -54,7 +54,7 @@ class AdminController extends Controller
         }
 
         return back()->withErrors([
-            'password' => 'Wrong email or password',
+            'password' => 'Wrong email or password', 
         ]);
     }
     public function cekinput(Request $request){
@@ -69,17 +69,17 @@ class AdminController extends Controller
             'foto' => $nama,
         ]);
         if($cekinput){
-            return redirect('/Admin/tableadmin');
+            return redirect('/Admin/tableadmin'); 
         }
     }
     public function konfirmasipesanan(Request $request, $id){
         $konfirmasipesanan = Transactions::find($id);
         $konfirmasipesanan->update($request->except('_token'));
-        return redirect('/Admin/validateadmin');
+        return redirect('/Admin/validateadmin'); 
     }
     public function deletemakanan($id){
         $deletemakanan = Food::find($id);
         $deletemakanan->delete();
         return redirect('/Admin/tableadmin');
-    }
+    } 
 }
