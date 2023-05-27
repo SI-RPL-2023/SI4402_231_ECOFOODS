@@ -6,9 +6,9 @@ use App\Models\User;
 use App\Models\Transactions;
 use App\Models\Food;
 use Illuminate\Http\Request; 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth; 
+use Illuminate\Support\Facades\Hash; 
+use Illuminate\Support\Facades\DB; 
  
 class UserController extends Controller
 { 
@@ -16,7 +16,7 @@ class UserController extends Controller
     {
         return view('register');
     }
-    public function succes()
+    public function succes() 
     {
         return view('User.succes'); 
     }
@@ -45,7 +45,7 @@ class UserController extends Controller
     }
     public function home()
     {
-        $list = Food::all();
+        $list = Food::all(); 
         return view('User.home',compact('list'));
     }
     public function menu()
@@ -54,11 +54,11 @@ class UserController extends Controller
         return view('User.menu',compact('list'));
     }
         public function cekregis(Request $request){
-            $request->validate([
+            $request->validate([ 
                 'password' => 'confirmed'
             ]);
     
-            $RegisterUser = User::create([
+            $RegisterUser = User::create([ 
                 'email' => $request->email,
                 'nama' => $request->nama,
                 'no_hp' => $request->no_hp,
@@ -66,14 +66,14 @@ class UserController extends Controller
                 'id_role' => 2,
                 'password' => Hash::make($request->password),
             ]);
-            if($RegisterUser){
+            if($RegisterUser){ 
                 return redirect('/login');
             }
          
     }
     public function ceklogin(Request $request)
     {
-        
+         
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required']
@@ -82,7 +82,7 @@ class UserController extends Controller
             $request->session()->regenerate();
  
             return redirect()->intended('/');
-        }
+        } 
  
         
         return redirect('/login'); 

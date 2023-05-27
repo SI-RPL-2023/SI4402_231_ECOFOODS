@@ -9,6 +9,7 @@ class Food extends Model
 {
     use HasFactory;
     protected $table = 'foowdfood';
-    protected $guarded = [];
+    protected $guarded = []; 
 }
 
+ 

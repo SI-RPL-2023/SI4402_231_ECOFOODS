@@ -37,13 +37,9 @@ Route::get('/invoice/{id}', [UserController::class, 'invoice']);
 Route::post('/cekloginadmin', [AdminController::class, 'cekloginadmin'])->name('cekloginadmin');
 Route::get('/Admin/homeadmin', [AdminController::class, 'adminlogin'])->name('adminlogin');
 Route::get('/Admin/tableadmin', [AdminController::class, 'tableadmin'])->name('tableadmin');
-Route::get('/Admin/admininput', [AdminController::class, 'inputadmin'])->name('inputadmin');
-Route::post('/Admin/admininput', [AdminController::class, 'cekinput'])->name('cekinput');
+Route::get('/Admin/admininput', [AdminController::class, 'inputadmin'])->name('inputadmin'); 
+Route::post('/Admin/admininput', [AdminController::class, 'cekinput'])->name('cekinput'); 
 Route::get('/Admin/validateadmin', [AdminController::class, 'validateadmin'])->name('validate');
-Route::get('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasi'])->name('konfirmasi');
-Route::put('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasipesanan'])->name('konfirmasipesanan');
+Route::get('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasi'])->name('konfirmasi'); 
+Route::put('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasipesanan'])->name('konfirmasipesanan'); 
 Route::delete('/Admin/tableadmin/{id}', [AdminController::class, 'deletemakanan'])->name('deletemakanan');
-
-
-
-
