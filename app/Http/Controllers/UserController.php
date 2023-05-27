@@ -135,8 +135,11 @@ class UserController extends Controller
         }
  
     }
-     
-  
+    public function invoice($id)
+    {
+        $list = Transactions::find($id);
+        return view('User.invoice', compact('list'));
+    }
  
  
 }
