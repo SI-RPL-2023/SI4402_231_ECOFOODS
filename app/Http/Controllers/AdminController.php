@@ -21,30 +21,30 @@ class AdminController extends Controller
         $list = User::all();
         return view('Admin.homeadmin',compact(['list'],['count'],['transaksi'],['tr'],['user']));
     }
-    public function tableadmin()
+    public function tableadmin() 
     {
         
-        $list = Food::all();
-        return view('Admin.tableadmin', compact(['list']));
-    }
-    public function inputadmin()
+        $list = Food::all(); 
+        return view('Admin.tableadmin', compact(['list'])); 
+    } 
+    public function inputadmin() 
     {
         return view('Admin.admininput');
-    }
-    public function konfirmasi($id)
-    {
-        $list = Transactions::find($id);
-        return view('Admin.konfirmasi' , compact(['list']));
+    } 
+    public function konfirmasi($id) 
+    { 
+        $list = Transactions::find($id); 
+        return view('Admin.konfirmasi' , compact(['list'])); 
     }
     public function validateadmin()
-    {
+    { 
    
-        $list = Transactions::all();
+        $list = Transactions::all(); 
         return view('Admin.validateadmin', compact(['list']));
     }
     public function cekloginadmin(Request $request)
     {
-        $request->validate([
+        $request->validate([ 
             'email' => 'required',
             'password' => 'required',
         ]);
@@ -54,7 +54,7 @@ class AdminController extends Controller
         }
 
         return back()->withErrors([
-            'password' => 'Wrong email or password',
+            'password' => 'Wrong email or password', 
         ]);
     }
     public function cekinput(Request $request){
@@ -69,7 +69,7 @@ class AdminController extends Controller
             'foto' => $nama,
         ]);
         if($cekinput){
-            return redirect('/Admin/tableadmin');
+            return redirect('/Admin/tableadmin'); 
         }
     }
     public function konfirmasipesanan(Request $request, $id){ 
@@ -81,5 +81,5 @@ class AdminController extends Controller
         $deletemakanan = Food::find($id);
         $deletemakanan->delete();
         return redirect('/Admin/tableadmin');
-    }
+    } 
 }

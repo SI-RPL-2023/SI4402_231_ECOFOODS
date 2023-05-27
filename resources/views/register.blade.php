@@ -59,7 +59,7 @@
                 <br><br>
                 </form>
                 <br><br>
-                <p>
+                <p> 
                     Already have an account? <a href="/login">Log in</a>
                 </p>
     </span>  
