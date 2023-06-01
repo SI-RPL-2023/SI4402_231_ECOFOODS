@@ -25,7 +25,7 @@
                                         <td>{{$l->nama_makanan}}</td>
                                             <td>Rp {{$l->harga}}</td>
                                             <td>{{$l->status}}</td>
-                                            @if($l->status=='konfirmasi')
+                                            @if($l->status=='Terkonfirmasi')
                                             <td><a href="/invoice/{{$l->id}}">cetak invoice</a></td>
                                             @endif
                                         </tr>

@@ -63,12 +63,12 @@
 <li class="nav-item"> 
     <a class="nav-link" href="/Admin/tableadmin"> 
         <i class="fas fa-fw fa-table"></i>
-        <span>Tables</span></a>
+        <span>Menu Makanan</span></a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="/Admin/validateadmin">
         <i class="fas fa-fw fa-table"></i>
-        <span>Validate</span></a>
+        <span>Transaksi</span></a>
 </li> 
 
 
@@ -133,8 +133,8 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">List Makanan</h1>
-                    <p class="mb-4">List Makanan yang dapat user pilih</a>.</p>
+                    <h1 class="h3 mb-2 text-gray-800">Menu Makanan</h1>
+                    <p class="mb-4">Menambahkan Menu Makanan yang dapat user pilih</a>.</p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">

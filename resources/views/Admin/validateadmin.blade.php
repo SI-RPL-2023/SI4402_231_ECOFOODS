@@ -63,12 +63,12 @@
 <li class="nav-item">
     <a class="nav-link" href="/Admin/tableadmin">
         <i class="fas fa-fw fa-table"></i>
-        <span>Tables</span></a>
+        <span>Menu Makanan</span></a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="/Admin/tableadmin">
+    <a class="nav-link" href="/Admin/validateadmin">
         <i class="fas fa-fw fa-table"></i>
-        <span>Validate</span></a>
+        <span>Transaksi</span></a>
 </li>
 
 
@@ -147,16 +147,14 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-                    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p>
+                    <h1 class="h3 mb-2 text-gray-800">Transaksi</h1>
+                    <p class="mb-4">Transaksi yang dapat ditindaklanjuti oleh Admin</a>.</p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">
-                                <a href="/Admin/admininput">Input Makanan</a>
+                                <a href="/Admin/admininput"></a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -173,17 +171,7 @@
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Alamat</th>
-                                            <th>Pilihan Pembayaran</th>
-                                            <th>Menu Makanan</th>
-                                            <th>Harga</th>
-                                            <th>Status Pesanan</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </tfoot>
+                            
                                     <tbody>
                                     @foreach($list as $l)
                                         <tr>

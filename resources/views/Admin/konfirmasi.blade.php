@@ -63,12 +63,12 @@
 <li class="nav-item">
     <a class="nav-link" href="/Admin/tableadmin">
         <i class="fas fa-fw fa-table"></i>
-        <span>Tables</span></a>
+        <span>Menu Makanan</span></a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="/Admin/validateadmin">
         <i class="fas fa-fw fa-table"></i>
-        <span>Validate</span></a>
+        <span>Transaksi</span></a>
 </li>
 
 
