@@ -82,5 +82,41 @@ class AdminController extends Controller
         $deletemakanan->delete();
         return redirect('/Admin/tableadmin');
     } 
-}
 
+    public function destroy(Post $post){
+        Post::destroy($post->id);
+        return redirect('/Admin/tableadmin');
+    }
+
+    public function editmakanan($id)
+    {
+        $makanan = Food::find($id);
+        return view('Admin.editmakanan', compact('makanan'));
+    }
+
+    public function updatemakanan(Request $request, $id)
+    {
+        $makanan = Food::find($id);
+
+        $request->validate([
+            'nama_makanan' => 'required',
+            'deskripsi' => 'required',
+            'harga' => 'required|numeric',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        if ($request->hasFile('foto')) {
+            $ekstensi = $request->file('foto')->getClientOriginalExtension();
+            $nama = $request->nama_makanan . '-' . now()->timestamp . '.' . $ekstensi;
+            $request->file('foto')->storeAs('images', $nama);
+            $makanan->foto = $nama;
+        }
+
+        $makanan->nama_makanan = $request->nama_makanan;
+        $makanan->deskripsi = $request->deskripsi;
+        $makanan->harga = $request->harga;
+        $makanan->save();
+
+        return redirect('/Admin/tableadmin');
+    }
+}

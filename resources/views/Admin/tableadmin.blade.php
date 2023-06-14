@@ -163,13 +163,15 @@
                                             <td>Rp {{number_format($l->harga)}}</td>
                                             <td>{{$l->foto}}</td>
                                                 <td>
-                                                    <form action="/Admin/tableadmin/{{$l->id}}"  method="post">
-                                                    @csrf 
+                                                <a href="/Admin/editmakanan/{{$l->id}}" class="btn btn-primary btn-edit">Edit</a>
+                                                
+                                                <form method="post" action="/Admin/tableadmin/{{$l->id}}" style="display:inline">
+                                                    @csrf
                                                     @method('delete')
-                                                        <button type ="submit"  class="btn btn-danger btn-edit">Hapus</button>
-                                                    </form>
-                                                </td>
-                                        </tr>
+                                                    <button type="submit" class="btn btn-danger btn-delete" onclick="return confirm ('Are you sure you want to delete the menu?')" >Hapus</button>
+                                                </form>
+                                            </td>
+                                        </tr>  
                                         @endforeach
                                         
                                     </tbody>

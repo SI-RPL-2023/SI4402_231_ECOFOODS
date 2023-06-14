@@ -133,8 +133,8 @@
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Input Makanan</h1>
-        <p class="mb-4">Admin Melakukan Input Makanan yang akan dijual kepada user</p>
+        <h1 class="h3 mb-2 text-gray-800">Edit Menu Makanan</h1>
+        <p class="mb-4">Admin Melakukan Edit Menu Makanan yang akan dijual kepada user</p>
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
@@ -146,36 +146,62 @@
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <div class="container">
-                                    <form action="" method="POST" enctype="multipart/form-data">
-                                     @csrf
-                                    
-                                        <img class="mb-4" src="../Image/ecofoods.png" alt="" width="100" height="">
+                        <form method="POST" action="{{ route('updatemakanan', $makanan->id) }}" enctype="multipart/form-data">
+                            @csrf
+                            <img class="mb-4" src="/Image/ecofoodss.png" alt="" width="100" height="">
+                            @method('PUT')
+                                <div class="form-floating">
+                                <input id="nama_makanan" type="text" class="form-control @error('nama_makanan') is-invalid @enderror" name="nama_makanan" value="{{ old('nama_makanan', $makanan->nama_makanan) }}" required autofocus>
+                                @error('nama_makanan')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                    <label for="floatingInput">Nama Makanan</label>
+                                </div>
+                                <br>
+
+                                <div class="form-floating">
+                                <input id="deskripsi" type="text" class="form-control @error('deskripsi') is-invalid @enderror" name="deskripsi" value="{{ old('deskripsi', $makanan->deskripsi)}}">
+                                @error('deskripsi')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                    <label for="floatingPassword">Deskripsi Makanan</label>
+                                </div>
+                                <br>
                                 
+                                <div class="form-floating">
+                                <input id="harga" type="number" class="form-control @error('harga') is-invalid @enderror" name="harga" value="{{ old('harga', $makanan->harga) }}" required>
+                                @error('harga')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror                                    
+                                <label for="floatingInput">Harga makanan</label>
+                                </div>
+                                <br>
                                 
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="" name="nama_makanan">
-                                        <label for="floatingInput">Nama Makanan</label>
-                                    </div>
-                                    <br>
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="floatingName" placeholder="" name="deskripsi">
-                                        <label for="floatingPassword">Deskripsi Makanan</label>
-                                    </div>
-                                    <br>
-                                    <div class="form-floating">
-                                        <input type="number" class="form-control" id="floatingInput" placeholder="" name="harga">
-                                        <label for="floatingInput">Harga makanan</label>
-                                    </div>
-                                    <br>
-                                    <div class="form-floating">
-                                                <input type="file" class="form-control" id="floatingPassword"
-                                                    placeholder="" name="foto" accept="image/*">
-                                                <label for="floatingInput">Foto Makanan</label>
-                                            </div>
-                                    <br><br>
-                                    <button class="w-25 btn navcolor text-white"  type="submit">Upload</button>
-                                    <br><br>
-                                    </form>
+                                <div class="form-floating">
+                                <input id="foto" type="file" class="form-control-file @error('foto') is-invalid @enderror" name="foto" accept="image/*">
+                                @error('foto')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                    <label for="floatingInput">Foto Makanan</label>
+                                </div>
+                                <br><br>
+                                
+                                <div class="form-group row mb-2">
+                                <div class="col-md-6 offset-md-0">
+                                <button class="w-50 btn navcolor text-white"  type="submit">Update Makanan</button>
+                                    </button>
+                                </div>
+                            </div>
+                                <br><br>
+                                </form>
                                 </div>
                     </table>
                 </div>
@@ -187,11 +213,6 @@
 
 </div>
 <!-- End of Main Content -->
-                
-
-               
-
-
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">

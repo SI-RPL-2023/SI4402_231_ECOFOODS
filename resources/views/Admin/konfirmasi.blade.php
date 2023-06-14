@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ExoFoods Admin Table</title>
+    <title>EcoFoods Admin Table</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ url ('asset/css/sb-admin-2.min.css')}}" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/Admin/homeadmin">
     <div class="sidebar-brand-icon">
-    <div class="sidebar-brand-text mx-3">ExoFoods Admin</div>
+    <div class="sidebar-brand-text mx-3">EcoFoods Admin</div>
     </div>
 </a>
 
@@ -197,7 +197,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Your Website 2023</span>
                     </div>
                 </div>
             </footer>

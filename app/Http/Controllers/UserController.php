@@ -8,7 +8,8 @@ use App\Models\Food;
 use Illuminate\Http\Request; 
 use Illuminate\Support\Facades\Auth; 
 use Illuminate\Support\Facades\Hash; 
-use Illuminate\Support\Facades\DB; 
+use Illuminate\Support\Facades\DB;
+use App\Exceptions\EmailAlreadyExistsException;
  
 class UserController extends Controller
 { 
@@ -53,24 +54,32 @@ class UserController extends Controller
         $list = Food::all();
         return view('User.menu',compact('list'));
     }
-        public function cekregis(Request $request){
-            $request->validate([ 
-                'password' => 'confirmed'
-            ]);
+    public function cekregis(Request $request)
+    {
+        $request->validate([
+            'password' => 'confirmed'
+        ]);
     
-            $RegisterUser = User::create([ 
-                'email' => $request->email,
-                'nama' => $request->nama,
-                'no_hp' => $request->no_hp,
-                'birth' => $request->birth,
-                'id_role' => 2,
-                'password' => Hash::make($request->password),
-            ]);
-            if($RegisterUser){ 
-                return redirect('/login');
-            }
-         
+        $existingUser = User::where('email', $request->email)->first();
+    
+        if ($existingUser) {
+            throw new EmailAlreadyExistsException();
+        }
+    
+        $registerUser = User::create([
+            'email' => $request->email,
+            'nama' => $request->nama,
+            'no_hp' => $request->no_hp,
+            'birth' => $request->birth,
+            'id_role' => 2,
+            'password' => Hash::make($request->password),
+        ]);
+    
+        if ($registerUser) {
+            return redirect('/login');
+        }
     }
+    
     public function ceklogin(Request $request)
     {
          
@@ -143,5 +152,3 @@ class UserController extends Controller
  
  
 }
-
-

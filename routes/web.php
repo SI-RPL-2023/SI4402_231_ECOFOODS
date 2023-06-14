@@ -43,3 +43,6 @@ Route::get('/Admin/validateadmin', [AdminController::class, 'validateadmin'])->n
 Route::get('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasi'])->name('konfirmasi'); 
 Route::put('/Admin/konfirmasi/{id}', [AdminController::class, 'konfirmasipesanan'])->name('konfirmasipesanan'); 
 Route::delete('/Admin/tableadmin/{id}', [AdminController::class, 'deletemakanan'])->name('deletemakanan');
+
+Route::get('/Admin/editmakanan/{id}', [AdminController::class, 'editmakanan'])->name('editmakanan');
+Route::put('/Admin/updatemakanan/{id}', [AdminController::class, 'updatemakanan'])->name('updatemakanan');
